@@ -6,6 +6,9 @@
 ## Carrer
 영남대 컴퓨터학부 대학생
 
+## Email
+gabin5556@naver.com
+
 <!--
 **vinn81/vinn81** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
