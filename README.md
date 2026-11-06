@@ -8,8 +8,6 @@
 장애가 생기면 재설치보다 원인 범위를 좁혀 해결합니다.
 
 [![Portfolio](badges/portfolio.svg)](https://intro-my-nine.vercel.app/)
-[![Resume](badges/resume.svg)](https://intro-my-nine.vercel.app/works/application.pdf)
-[![Email](badges/email.svg)](mailto:gabin5556@naver.com)
 
 </div>
 
@@ -27,13 +25,16 @@
 
 ### 📊 결과로 확인한 것
 
-| 지표 | 무엇을 했나 | 근거 |
-| :---: | --- | --- |
-| **4 / 4** | Wazuh Agent 4대 Active 연결, 24시간 이벤트 **384건** 조회 | Half-Security Labs 결과보고서 |
-| **3 / 3** | 직접 쓴 Snort 3 룰로 Kali의 ping · nmap · 웹 접속 모두 경보 | Half-Security Labs 결과보고서 |
-| **10 / 10** | 제로 트러스트 보안 Agent, 단계별 코드 검토 전부 통과 | [zero-trust-security-agent](https://github.com/vinn81/zero-trust-security-agent) |
-| **403** | ModSecurity 룰로 `/admin` 접근과 XSS 요청 차단, 감사 로그 확인 | SKT ALEPH 실습 |
-| **1 대** | SQLi → SSH → 권한 상승까지 이어지는 CTF 머신 제작·완주 검증 (팀) | SKT ALEPH CTF 과제 |
+| 결과 | 무엇을 했나 | 기술 | 근거 |
+| :---: | --- | --- | --- |
+| **4 / 4**<br/>**3 / 3** | **Half-Security Labs (혼자 구축)** · VLAN 3개와 Cisco ASAv로 Inside·DMZ·Outside 분리. Wazuh Agent 4대 Active·24시간 이벤트 384건 조회, 직접 쓴 Snort 3 룰로 Kali의 ping·nmap·웹 접속 모두 경보 | GNS3 · ASAv · Snort 3 · Wazuh · OSSEC · OpenVPN | [결과보고서 PDF](https://intro-my-nine.vercel.app/works/half-security-labs.pdf) · [포트폴리오](https://intro-my-nine.vercel.app/#works) |
+| **10 / 10** | **제로 트러스트 보안 Agent 「헤임달」** · 사용자·기기·세션 확인, 업무 앱 접근 판정, XDR 경보, 내 PC 보안 상태 실측(Windows 기본 도구와 대조). 단계별 코드 검토 전부 통과 | JavaScript · PowerShell | [저장소](https://github.com/vinn81/zero-trust-security-agent) · [상세 페이지](https://intro-my-nine.vercel.app/defense/) |
+| **401** | **포트폴리오 사이트 · 패스키 로그인** · 서버에서 challenge·origin·서명 검증, HMAC 서명 HttpOnly 세션. 로그인 없는 비공개 API 요청이 401로 거절되는 것 확인 | JavaScript · Vercel Functions · Neon PostgreSQL | [저장소](https://github.com/vinn81/introMy) · [구현 기록](https://github.com/vinn81/introMy/blob/main/AUTH_IMPLEMENTATION.md) |
+| **403** | **WAF 실습** · Apache + ModSecurity 룰로 `/admin` 접근과 XSS 요청 차단, `modsec_audit.log`로 확인 | Apache · ModSecurity | SKT ALEPH 실습 노트 (비공개) |
+| **완주** | **CTF 머신 「OISecure 업무 포털」 제작 (팀)** · 디렉터리 열거 → UNION SQLi로 SSH 자격 증명 탈취 → sudo 파이썬 모듈 하이재킹 권한 상승. 공격 경로 외에는 Prepared Statement·CSRF·bcrypt·최소 권한으로 막음 | Ubuntu · PHP · MariaDB | SKT ALEPH 과제 (비공개, 풀이 유출 방지) |
+| **8개 도메인** | **진로온(JOBE) 종합설계 백엔드** · 전공 진단 서비스 REST API, 회원가입·refresh token·이메일 인증 | Java · Spring Boot · JPA | [저장소](https://github.com/vinn81/JOBE) |
+| **매일 기록** | **달구벌 NOW** · 달구벌대로 일별 통행속도를 수집해 전날과 비교 | Python · PostgreSQL | [저장소](https://github.com/vinn81/aleph-traffic) · [사이트](https://aleph-traffic.vercel.app/) |
+| **팀 배정** | **Automatch** · 풋살 매치 예약과 자동 팀 배정 | Java · Spring Boot · JPA · MySQL | [저장소](https://github.com/vinn81/OS-Project) |
 
 ---
 
@@ -76,18 +77,6 @@ flowchart LR
 
 ---
 
-### 🛠️ Projects
-
-| 프로젝트 | 내용 | 기술 |
-| --- | --- | --- |
-| 🛡️ [**zero-trust-security-agent**](https://github.com/vinn81/zero-trust-security-agent) | 제로 트러스트 보안 Agent 「헤임달」: 사용자·기기·세션 확인, 업무 앱 접근 판정, XDR 경보, 내 PC 보안 상태 실측(Windows 기본 도구와 대조) | JavaScript · PowerShell |
-| 🚩 **CTF 머신 「OISecure 업무 포털」** (팀) | Ubuntu 24.04 + Apache·MariaDB·PHP. 디렉터리 열거 → UNION SQLi로 SSH 자격 증명 탈취 → sudo 파이썬 모듈 하이재킹 권한 상승. 공격 경로 외에는 Prepared Statement·CSRF·bcrypt·`Options -Indexes`·최소 권한(750/640)으로 막음 | Linux · PHP · MariaDB |
-| 🌐 [**introMy**](https://github.com/vinn81/introMy) | 포트폴리오 사이트. 패스키(WebAuthn) 로그인, 서버에서 challenge·origin·서명 검증, HMAC 서명 HttpOnly 세션 | JavaScript · Vercel Functions · Neon PostgreSQL |
-| 🎓 [**JOBE (진로온)**](https://github.com/vinn81/JOBE) | 종합설계 전공 진단 서비스 백엔드. 8개 도메인 · REST API, 회원가입·refresh token·이메일 인증 | Java · Spring Boot · JPA |
-| ⚽ [**OS-Project**](https://github.com/vinn81/OS-Project) | Automatch: 풋살 매치 예약·자동 팀 배정 | Java · Spring Boot · JPA · MySQL |
-| 🚦 [**aleph-traffic**](https://github.com/vinn81/aleph-traffic) | 달구벌 NOW: 달구벌대로 일별 통행속도 수집·비교 | Python · PostgreSQL |
-
----
 
 ### 🔐 Security Practice
 
