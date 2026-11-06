@@ -7,9 +7,9 @@
 망을 나누고 경계를 통제하며, 탐지·관제를 직접 구축해 결과 화면으로 검증합니다.<br/>
 장애가 생기면 재설치보다 원인 범위를 좁혀 해결합니다.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-intro--my--nine.vercel.app-0A0E14?style=for-the-badge&logo=vercel&logoColor=white)](https://intro-my-nine.vercel.app/)
-[![Resume](https://img.shields.io/badge/Resume-PDF-22D3EE?style=for-the-badge&logo=readdotcv&logoColor=black)](https://intro-my-nine.vercel.app/works/application.pdf)
-[![Email](https://img.shields.io/badge/gabin5556@naver.com-03C75A?style=for-the-badge&logo=naver&logoColor=white)](mailto:gabin5556@naver.com)
+[![Portfolio](badges/portfolio.svg)](https://intro-my-nine.vercel.app/)
+[![Resume](badges/resume.svg)](https://intro-my-nine.vercel.app/works/application.pdf)
+[![Email](badges/email.svg)](mailto:gabin5556@naver.com)
 
 </div>
 
@@ -126,49 +126,49 @@ SYN 플러딩 · TCP Reset · 세션 하이재킹 · Mitnick 공격 · DNS 캐�
 
 **Network & Security**
 
-![Cisco](https://img.shields.io/badge/Cisco_IOS_·_ASAv-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
-![GNS3](https://img.shields.io/badge/GNS3-2E7D32?style=flat-square)
-![pfSense](https://img.shields.io/badge/pfSense-212121?style=flat-square&logo=pfsense&logoColor=white)
-![Snort](https://img.shields.io/badge/Snort_3-E4002B?style=flat-square)
-![Suricata](https://img.shields.io/badge/Suricata-EF7D00?style=flat-square)
-![Wazuh](https://img.shields.io/badge/Wazuh-005571?style=flat-square)
-![OSSEC](https://img.shields.io/badge/OSSEC-4B6EAF?style=flat-square)
-![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=flat-square)
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
-![ModSecurity](https://img.shields.io/badge/ModSecurity-D22128?style=flat-square)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![Cisco](badges/cisco.svg)
+![GNS3](badges/gns3.svg)
+![pfSense](badges/pfsense.svg)
+![Snort](badges/snort.svg)
+![Suricata](badges/suricata.svg)
+![Wazuh](badges/wazuh.svg)
+![OSSEC](badges/ossec.svg)
+![Zabbix](badges/zabbix.svg)
+![Splunk](badges/splunk.svg)
+![ModSecurity](badges/modsecurity.svg)
+![Wireshark](badges/wireshark.svg)
 
 VLAN · EIGRP/OSPF · HSRP · ACL · NAT · Site-to-Site VPN · OpenVPN · DMZ 설계
 
 **Offensive (탐지 룰 검증용)**
 
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-4682B4?style=flat-square)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
+![Kali](badges/kali.svg)
+![Nmap](badges/nmap.svg)
+![Metasploit](badges/metasploit.svg)
+![Burp Suite](badges/burp-suite.svg)
 
 **Server & OS**
 
-![Linux](https://img.shields.io/badge/Rocky_·_Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Apache](https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=apache&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=gnometerminal&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![Linux](badges/linux.svg)
+![Apache](badges/apache.svg)
+![MariaDB](badges/mariadb.svg)
+![Docker](badges/docker.svg)
+![PowerShell](badges/powershell.svg)
+![Raspberry Pi](badges/raspberry-pi.svg)
 
 DNS · HTTPS · SFTP/FTP · NFS · Samba · rsyslog · cron · 권한·umask · LVM/RAID
 
 **Programming**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell_Script-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![SQL](https://img.shields.io/badge/MySQL_·_PostgreSQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Python](badges/python.svg)
+![Java](badges/java.svg)
+![Spring Boot](badges/spring-boot.svg)
+![JavaScript](badges/javascript.svg)
+![PHP](badges/php.svg)
+![C](badges/c.svg)
+![Shell](badges/shell.svg)
+![SQL](badges/sql.svg)
+![Flask](badges/flask.svg)
 
 ---
 
