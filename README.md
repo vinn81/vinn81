@@ -34,7 +34,6 @@
 | **완주** | **CTF 머신 「OISecure 업무 포털」 제작 (팀)** · 디렉터리 열거 → UNION SQLi로 SSH 자격 증명 탈취 → sudo 파이썬 모듈 하이재킹 권한 상승. 공격 경로 외에는 Prepared Statement·CSRF·bcrypt·최소 권한으로 막음 | Ubuntu · PHP · MariaDB | SKT ALEPH 과제 (비공개, 풀이 유출 방지) |
 | **8개 도메인** | **진로온(JOBE) 종합설계 백엔드** · 전공 진단 서비스 REST API, 회원가입·refresh token·이메일 인증 | Java · Spring Boot · JPA | [저장소](https://github.com/vinn81/JOBE) |
 | **매일 기록** | **달구벌 NOW** · 달구벌대로 일별 통행속도를 수집해 전날과 비교 | Python · PostgreSQL | [저장소](https://github.com/vinn81/aleph-traffic) · [사이트](https://aleph-traffic.vercel.app/) |
-| **팀 배정** | **Automatch** · 풋살 매치 예약과 자동 팀 배정 | Java · Spring Boot · JPA · MySQL | [저장소](https://github.com/vinn81/OS-Project) |
 
 <details>
 <summary><b>Half-Security Labs · 재설치 없이 해결한 트러블슈팅 3건</b></summary>
