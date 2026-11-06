@@ -27,7 +27,7 @@
 
 | 결과 | 무엇을 했나 | 기술 | 근거 |
 | :---: | --- | --- | --- |
-| **4 / 4**<br/>**3 / 3** | **Half-Security Labs (혼자 구축)** · VLAN 3개와 Cisco ASAv로 Inside·DMZ·Outside 분리. Wazuh Agent 4대 Active·24시간 이벤트 384건 조회, 직접 쓴 Snort 3 룰로 Kali의 ping·nmap·웹 접속 모두 경보 | GNS3 · ASAv · Snort 3 · Wazuh · OSSEC · OpenVPN | [결과보고서 PDF](https://intro-my-nine.vercel.app/works/half-security-labs.pdf) · [포트폴리오](https://intro-my-nine.vercel.app/#works) |
+| **4 / 4**<br/>**3 / 3** | **Half-Security Labs (혼자 구축)** · VLAN 3개와 Cisco ASAv로 Inside·DMZ·Outside 분리. Wazuh Agent 4대 Active·24시간 이벤트 384건 조회, 직접 쓴 Snort 3 룰로 Kali의 ping·nmap·웹 접속 모두 경보 | GNS3 · ASAv · Snort 3 · Wazuh · OSSEC · OpenVPN | [결과보고서 PDF](https://intro-my-nine.vercel.app/works/half-security-labs.pdf) |
 | **10 / 10** | **제로 트러스트 보안 Agent 「헤임달」** · 사용자·기기·세션 확인, 업무 앱 접근 판정, XDR 경보, 내 PC 보안 상태 실측(Windows 기본 도구와 대조). 단계별 코드 검토 전부 통과 | JavaScript · PowerShell | [저장소](https://github.com/vinn81/zero-trust-security-agent) · [상세 페이지](https://intro-my-nine.vercel.app/defense/) |
 | **401** | **포트폴리오 사이트 · 패스키 로그인** · 서버에서 challenge·origin·서명 검증, HMAC 서명 HttpOnly 세션. 로그인 없는 비공개 API 요청이 401로 거절되는 것 확인 | JavaScript · Vercel Functions · Neon PostgreSQL | [저장소](https://github.com/vinn81/introMy) · [구현 기록](https://github.com/vinn81/introMy/blob/main/AUTH_IMPLEMENTATION.md) |
 | **403** | **WAF 실습** · Apache + ModSecurity 룰로 `/admin` 접근과 XSS 요청 차단, `modsec_audit.log`로 확인 | Apache · ModSecurity | SKT ALEPH 실습 노트 (비공개) |
@@ -36,36 +36,8 @@
 | **매일 기록** | **달구벌 NOW** · 달구벌대로 일별 통행속도를 수집해 전날과 비교 | Python · PostgreSQL | [저장소](https://github.com/vinn81/aleph-traffic) · [사이트](https://aleph-traffic.vercel.app/) |
 | **팀 배정** | **Automatch** · 풋살 매치 예약과 자동 팀 배정 | Java · Spring Boot · JPA · MySQL | [저장소](https://github.com/vinn81/OS-Project) |
 
----
-
-### 🌐 Half-Security Labs — 혼자 구축한 망
-
-```mermaid
-flowchart LR
-    subgraph OUT[Outside · /26 VLAN 10·20·30]
-        K[Kali 공격자]
-        IDS[Snort 3 NIDS]
-    end
-    K -->|ping · nmap · HTTP| FW{{Cisco ASAv}}
-    K -. 경보 .-> IDS
-    FW --> DMZ
-    FW --> IN
-    subgraph DMZ[DMZ]
-        DNS[DNS]
-        WEB[Web · DB]
-        OS[OSSEC Server]
-        ZB[Zabbix]
-        WZ[Wazuh]
-        PMM[PMM]
-    end
-    subgraph IN[Inside]
-        PF[pfSense · OpenVPN]
-        EA[Earth]
-    end
-```
-
 <details>
-<summary><b>재설치 없이 해결한 트러블슈팅 3건</b></summary>
+<summary><b>Half-Security Labs · 재설치 없이 해결한 트러블슈팅 3건</b></summary>
 
 | 증상 | 원인 | 해결 |
 | --- | --- | --- |
@@ -171,6 +143,6 @@ DNS · HTTPS · SFTP/FTP · NFS · Samba · rsyslog · cron · 권한·umask · 
 
 <div align="center">
 
-<sub>모든 수치는 결과보고서와 실측 화면에 근거합니다 · 자세한 내용은 <a href="https://intro-my-nine.vercel.app/">포트폴리오</a></sub>
+<sub>모든 수치는 결과보고서와 실측 화면에 근거합니다</sub>
 
 </div>
